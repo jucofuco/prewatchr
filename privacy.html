@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – Prewatchr</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="icon128.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F5F3EE;
+    --bg2: #ECEAE3;
+    --ink: #1A1814;
+    --ink2: #5C5A55;
+    --ink3: #9C9A96;
+    --red: #D85A30;
+    --red-light: #FAECE7;
+    --border: rgba(26,24,20,0.12);
+    --card: #FFFFFF;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2.5rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  .logo {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.4rem;
+    color: var(--ink);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .logo img { width: 28px; height: 28px; border-radius: 6px; }
+  .logo span { color: var(--red); font-style: italic; }
+
+  nav a.back {
+    font-size: 0.875rem;
+    color: var(--ink2);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    transition: color 0.2s;
+  }
+  nav a.back:hover { color: var(--ink); }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+  }
+
+  .page-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink3);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .page h1 {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+
+  .updated {
+    font-size: 0.85rem;
+    color: var(--ink3);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .summary-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--red);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+    color: var(--ink2);
+    line-height: 1.65;
+  }
+
+  .summary-box strong { color: var(--ink); font-weight: 500; }
+
+  h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 1.45rem;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin: 2.5rem 0 0.75rem;
+  }
+
+  p { color: var(--ink2); margin-bottom: 1rem; font-size: 0.95rem; }
+
+  ul {
+    list-style: none;
+    margin: 0.5rem 0 1.25rem;
+    padding: 0;
+  }
+
+  ul li {
+    font-size: 0.925rem;
+    color: var(--ink2);
+    padding: 0.3rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  .no-list li::before { content: '✗'; font-size: 0.8rem; color: var(--ink3); top: 2px; line-height: 1.7; }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink3);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table td {
+    padding: 0.6rem 0.75rem;
+    color: var(--ink2);
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    letter-spacing: 0.03em;
+  }
+
+  .tag-local { background: #EAF3DE; color: #3B6D11; }
+  .tag-processed { background: #FAEEDA; color: #854F0B; }
+  .tag-never { background: var(--bg2); color: var(--ink3); }
+
+  a { color: var(--red); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .third-party-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .third-party-card h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+  }
+
+  .third-party-card p { margin: 0; font-size: 0.875rem; }
+
+  .contact-box {
+    background: var(--ink);
+    color: #fff;
+    border-radius: 14px;
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .contact-box h2 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .contact-box p { color: rgba(255,255,255,0.65); margin: 0 0 1.25rem; font-size: 0.9rem; }
+
+  .contact-box a {
+    display: inline-block;
+    background: var(--red);
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .contact-box a:hover { opacity: 0.85; text-decoration: none; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--ink3);
+  }
+  footer a { color: var(--ink3); text-decoration: none; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 600px) {
+    nav { padding: 1rem 1.25rem; }
+    .page { padding: 2.5rem 1.25rem 4rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html"><img src="icon128.png" alt="">Pre<span>watchr</span></a>
+  <a class="back" href="index.html">← Back to home</a>
+</nav>
+
+<div class="page">
+  <div class="page-label">Legal</div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: December 7, 2025</div>
+
+  <div class="summary-box">
+    <strong>The short version:</strong> Prewatchr doesn't collect your personal data, doesn't track what you watch, and doesn't require an account. The only thing stored is a summary count — and it lives in your browser, not our servers.
+  </div>
+
+  <h2>What Prewatchr does</h2>
+  <p>Prewatchr is a browser extension for Chrome and Firefox that generates AI-powered summaries of YouTube videos so you can decide whether to watch them — before you click.</p>
+
+  <h2>What data we handle</h2>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Where it goes</th>
+        <th>How long</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Summaries count</td>
+        <td><span class="tag tag-local">Your browser only</span></td>
+        <td>Until you uninstall</td>
+      </tr>
+      <tr>
+        <td>Video URL (when you request a summary)</td>
+        <td><span class="tag tag-processed">Processed, then deleted</span></td>
+        <td>Seconds</td>
+      </tr>
+      <tr>
+        <td>Video transcript</td>
+        <td><span class="tag tag-processed">Processed, then deleted</span></td>
+        <td>Seconds</td>
+      </tr>
+      <tr>
+        <td>Your browsing history</td>
+        <td><span class="tag tag-never">Never collected</span></td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Personal information</td>
+        <td><span class="tag tag-never">Never collected</span></td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Stored locally on your device</h2>
+  <p>The extension stores one piece of information in your browser's local storage:</p>
+  <ul>
+    <li>The number of summaries you've generated</li>
+  </ul>
+  <p>This data never leaves your device and is never transmitted to us.</p>
+
+  <h2>What happens when you request a summary</h2>
+  <p>When you click a YouTube thumbnail with Prewatchr armed, here's exactly what happens:</p>
+  <ul>
+    <li>The video URL is sent to our server</li>
+    <li>The transcript is fetched from YouTube</li>
+    <li>The transcript is passed to an AI model to generate a summary</li>
+    <li>The summary is returned to your browser</li>
+    <li>All data is immediately discarded — nothing is stored on our end</li>
+  </ul>
+
+  <h2>What we do not do</h2>
+  <ul class="no-list">
+    <li>Store your browsing history</li>
+    <li>Track which videos you watch</li>
+    <li>Collect personal information</li>
+    <li>Require login or accounts</li>
+    <li>Share data for marketing or advertising</li>
+    <li>Sell your data to third parties</li>
+  </ul>
+
+  <h2>Third-party services</h2>
+  <p>To deliver the summary, we use the following services. Each has its own privacy policy:</p>
+
+  <div class="third-party-card">
+    <h3>Google Gemini AI</h3>
+    <p>Generates the summary from the video transcript. <a href="https://ai.google.dev/gemini-api/terms" target="_blank">View Gemini privacy terms →</a></p>
+  </div>
+
+  <div class="third-party-card">
+    <h3>YouTube / Google</h3>
+    <p>Source of video transcripts and captions. <a href="https://policies.google.com/privacy" target="_blank">View Google privacy policy →</a></p>
+  </div>
+
+  <div class="third-party-card">
+    <h3>Infrastructure providers</h3>
+    <p>We use third-party services to ensure reliable delivery of transcripts. These services process video URLs temporarily during the summary request. No user data is stored or shared beyond real-time processing.</p>
+  </div>
+
+  <h2>Data security</h2>
+  <ul>
+    <li>All communication between the extension and our server uses HTTPS encryption</li>
+    <li>Video data is processed in real-time only — no persistent storage</li>
+    <li>No user accounts or passwords are required or stored</li>
+    <li>Local statistics remain only in your browser</li>
+  </ul>
+
+  <h2>Your control</h2>
+  <p>You have full control over your data:</p>
+  <ul>
+    <li>Clear all local data at any time by uninstalling the extension</li>
+    <li>Stop using the service at any time — there's nothing to cancel</li>
+    <li>Request any information we might hold by contacting us below</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>Prewatchr is not intended for use by children under the age of 13. We do not knowingly collect data from children.</p>
+
+  <h2>Updates to this policy</h2>
+  <p>We may update this privacy policy from time to time. When we do, the "Last updated" date at the top of this page will change. We recommend checking this page periodically.</p>
+
+  <div class="contact-box">
+    <h2>Questions?</h2>
+    <p>If you have any questions about this privacy policy or how Prewatchr handles data, we're happy to help.</p>
+    <a href="/cdn-cgi/l/email-protection#89e3fcfbe8e3a7faecebe8c9eee4e8e0e5a7eae6e4"><span class="__cf_email__" data-cfemail="2b415e594a4105584e494a6b4c464a424705484446">[email&#160;protected]</span></a

@@ -239,12 +239,20 @@
   footer {
     border-top: 1px solid var(--border);
     padding: 1.5rem 2.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-size: 0.8rem;
     color: var(--ink3);
   }
   footer a { color: var(--ink3); text-decoration: none; }
   footer a:hover { color: var(--ink); }
+
+  .footer-by { font-size: 0.75rem; color: var(--ink3); letter-spacing: 0.05em; }
+  .footer-by a { color: var(--ink3); text-decoration: none; transition: color 0.15s; }
+  .footer-by a:hover { color: var(--red); }
 
   @media (max-width: 600px) {
     nav { padding: 1rem 1.25rem; }
@@ -381,3 +389,14 @@
     <h2>Questions?</h2>
     <p>If you have any questions about this privacy policy or how Prewatchr handles data, we're happy to help.</p>
     <a href="/cdn-cgi/l/email-protection#89e3fcfbe8e3a7faecebe8c9eee4e8e0e5a7eae6e4"><span class="__cf_email__" data-cfemail="2b415e594a4105584e494a6b4c464a424705484446">[email&#160;protected]</span></a
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">← Back to Prewatchr</a>
+  <span class="footer-by">by <a href="https://jucofuco.github.io" target="_blank" rel="noopener">jucofuco</a></span>
+  <span>© 2025 Prewatchr</span>
+</footer>
+
+</body>
+</html>

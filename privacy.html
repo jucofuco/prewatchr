@@ -270,7 +270,7 @@
 <div class="page">
   <div class="page-label">Legal</div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated: December 7, 2025</div>
+  <div class="updated">Last updated: July 2, 2026</div>
 
   <div class="summary-box">
     <strong>The short version:</strong> Prewatchr doesn't collect your personal data, doesn't track what you watch, and doesn't require an account. The only thing stored is a summary count — and it lives in your browser, not our servers.
@@ -329,7 +329,7 @@
   <p>When you click a YouTube thumbnail with Prewatchr armed, here's exactly what happens:</p>
   <ul>
     <li>The video URL is sent to our server</li>
-    <li>The transcript is fetched from YouTube</li>
+    <li>The transcript is fetched. To do this reliably, the extension may request YouTube's captions using your existing YouTube session, the same way the YouTube page itself does — this lets us read subtitles without a separate login. No cookies, session tokens, or credentials are ever sent to our servers; only the resulting caption text is passed along for summarization.</li>
     <li>The transcript is passed to an AI model to generate a summary</li>
     <li>The summary is returned to your browser</li>
     <li>All data is immediately discarded — nothing is stored on our end</li>
@@ -361,6 +361,11 @@
   <div class="third-party-card">
     <h3>Infrastructure providers</h3>
     <p>We use third-party services to ensure reliable delivery of transcripts. These services process video URLs temporarily during the summary request. No user data is stored or shared beyond real-time processing.</p>
+  </div>
+
+  <div class="third-party-card">
+    <h3>Anonymous usage analytics</h3>
+    <p>We use GoatCounter to track anonymous, aggregate usage (e.g. total requests, error rates) so we can keep the service running reliably. This does not identify individual users and is not linked to any personal data.</p>
   </div>
 
   <h2>Data security</h2>
